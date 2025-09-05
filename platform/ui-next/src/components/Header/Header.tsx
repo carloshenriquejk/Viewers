@@ -10,6 +10,7 @@ import {
   ToolButton,
 } from '../';
 import { IconPresentationProvider } from '@ohif/ui-next';
+import logoImage from '../../../../ui-next/assets/images/image.png';
 
 import NavBar from '../NavBar';
 
@@ -72,7 +73,11 @@ function Header({
             >
               {isReturnEnabled && <Icons.ArrowLeft className="text-primary ml-1 h-7 w-7" />}
               <div className="ml-1">
-                {WhiteLabeling?.createLogoComponentFn?.(React, props) || <Icons.OHIFLogo />}
+                <img
+                  src={logoImage} // Use the imported image
+                  alt="Logo"
+                  className="h-20 w-20" // Add proper sizing
+                />
               </div>
             </div>
           </div>

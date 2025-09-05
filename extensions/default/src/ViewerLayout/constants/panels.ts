@@ -30,11 +30,11 @@ const getPanelGroupDefinition = ({
       collapsedOffsetWidth: collapsedWidth + collapsedInsideBorderSize + collapsedOutsideBorderSize,
     },
     right: {
-      panelId: 'viewerLayoutResizableRightPanel',
-      initialExpandedWidth: rightPanelInitialExpandedWidth,
-      minimumExpandedOffsetWidth: rightPanelMinimumExpandedWidth + expandedInsideBorderSize,
-      initialExpandedOffsetWidth: rightPanelInitialExpandedWidth + expandedInsideBorderSize,
-      collapsedOffsetWidth: collapsedWidth + collapsedInsideBorderSize + collapsedOutsideBorderSize,
+      // panelId: 'viewerLayoutResizableRightPanel',
+      // initialExpandedWidth: rightPanelInitialExpandedWidth,
+      // minimumExpandedOffsetWidth: rightPanelMinimumExpandedWidth + expandedInsideBorderSize,
+      // initialExpandedOffsetWidth: rightPanelInitialExpandedWidth + expandedInsideBorderSize,
+      // collapsedOffsetWidth: collapsedWidth + collapsedInsideBorderSize + collapsedOutsideBorderSize,
     },
   };
 };

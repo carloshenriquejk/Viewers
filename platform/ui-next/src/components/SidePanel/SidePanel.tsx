@@ -462,7 +462,7 @@ const SidePanel = ({
     >
       {panelOpen ? (
         <>
-          {getOpenStateComponent()}
+          {/* {getOpenStateComponent()} */}
           {tabs.map((tab, tabIndex) => {
             if (tabIndex === activeTabIndex) {
               return <tab.content key={tabIndex} />;

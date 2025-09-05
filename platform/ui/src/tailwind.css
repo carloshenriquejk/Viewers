@@ -74,7 +74,9 @@
     --error-border: hsl(359, 100%, 94%);
     --error-text: hsl(360, 100%, 45%);
   }
-
+  .bg-secondary-dark {
+    background-color: black !important;
+  }
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
