@@ -596,20 +596,20 @@ const toolbarButtons: Button[] = [
       evaluate: 'evaluate.cornerstoneTool',
     },
   },
-  {
-    id: 'TrackballRotate',
-    uiType: 'ohif.toolButton',
-    props: {
-      type: 'tool',
-      icon: 'tool-3d-rotate',
-      label: '3D Rotate',
-      commands: setToolActiveToolbar,
-      evaluate: {
-        name: 'evaluate.cornerstoneTool',
-        disabledText: 'Select a 3D viewport to enable this tool',
-      },
-    },
-  },
+  // {
+  //   id: 'TrackballRotate',
+  //   uiType: 'ohif.toolButton',
+  //   props: {
+  //     type: 'tool',
+  //     icon: 'tool-3d-rotate',
+  //     label: '3D Rotate',
+  //     commands: setToolActiveToolbar,
+  //     evaluate: {
+  //       name: 'evaluate.cornerstoneTool',
+  //       disabledText: 'Select a 3D viewport to enable this tool',
+  //     },
+  //   },
+  // },
   {
     id: 'Capture',
     uiType: 'ohif.toolButton',

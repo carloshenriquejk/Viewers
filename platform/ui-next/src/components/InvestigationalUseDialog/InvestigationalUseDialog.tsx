@@ -66,7 +66,7 @@ const InvestigationalUseDialog = ({
   return (
     <div className="fixed bottom-2 z-50 flex h-[86px] w-full justify-center">
       <div className="bg-secondary-dark border-primary-dark flex w-[90%] items-center justify-between rounded-lg border-2 pl-[22px] pr-[22px] pt-[10px] pb-[10px] shadow-lg">
-        <div className="flex items-center gap-4">
+        <div className="gap-15 flex items-center">
           <Icons.InvestigationalUse className="h-18 w-18" />
           <div className="flex flex-col">
             <div className="text-[19px] text-white">
