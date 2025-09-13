@@ -35,16 +35,16 @@ export default function ToolButtonShowcase() {
           />
           <ToolButton
             id="Zoom"
-            icon="ToolMove"
-            label="Pan"
-            tooltip="Pan"
+            icon="ToolWindowLevel"
+            label="Window Level"
+            tooltip="Window Level"
             onInteraction={({ itemId }) => console.debug(`Clicked ${itemId}`)}
           />
           <ToolButton
             id="Zoom"
-            icon="ToolWindowLevel"
-            label="Window Level"
-            tooltip="Window Level"
+            icon="ToolMove"
+            label="Pan"
+            tooltip="Pan"
             onInteraction={({ itemId }) => console.debug(`Clicked ${itemId}`)}
           />
         </TooltipProvider>

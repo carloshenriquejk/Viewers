@@ -127,26 +127,35 @@ const Trigger = ({
   const hasTooltip = tooltip || (disabled && disabledText);
 
   const button = (
-    <Button
-      className={cn(
-        'inline-flex h-10 w-10 items-center justify-center !rounded-lg',
-        disabled
-          ? 'text-common-bright hover:bg-primary-dark hover:text-primary-light cursor-not-allowed opacity-40'
-          : isOpen
-            ? 'bg-background text-foreground/80'
-            : 'text-foreground/80 hover:bg-background hover:text-highlight bg-transparent',
-        className
-      )}
-      variant="ghost"
-      size="icon"
-      aria-label={tooltip}
-      disabled={disabled}
-    >
-      <Icons.ByName
-        name="tool-layout"
-        className="h-7 w-7"
-      />
-    </Button>
+    <div className="text-center">
+      <Button
+        className={cn(
+          '',
+          disabled
+            ? 'text-common-brightcursor-not-allowed opacity-40'
+            : isOpen
+              ? 'bg-background text-foreground/80'
+              : 'text-foreground/80 hover:bg-background hover:text-highlight bg-transparent',
+          className
+        )}
+        variant="ghost"
+        size="icon"
+        aria-label={tooltip}
+        disabled={disabled}
+      >
+        <Icons.ByName
+          name="tool-layout"
+          className="h-7 w-7"
+        />
+      </Button>
+
+      <strong
+        className="text-foreground/80"
+        style={{ display: 'block', fontSize: '0.8875rem' }}
+      >
+        Disposição
+      </strong>
+    </div>
   );
 
   // If user passed children (custom button), just wrap it directly
