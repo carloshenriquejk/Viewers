@@ -88,16 +88,8 @@ function ViewerHeader({ appConfig }: withAppTypes<{ appConfig: AppTypes.Config }
       onClickReturnButton={onClickReturnButton}
       WhiteLabeling={appConfig.whiteLabeling}
       Secondary={<Toolbar buttonSection="secondary" />}
-      PatientInfo={
-        appConfig.showPatientInfo !== PatientInfoVisibility.DISABLED && (
-          <HeaderPatientInfo
-            servicesManager={servicesManager}
-            appConfig={appConfig}
-          />
-        )
-      }
       UndoRedo={
-        <div className="text-primary flex cursor-pointer items-center">
+        <div className="text-primary flex cursor-pointer items-center gap-2">
           <Button
             variant="ghost"
             className="hover:bg-primary-dark"
@@ -105,7 +97,7 @@ function ViewerHeader({ appConfig }: withAppTypes<{ appConfig: AppTypes.Config }
               commandsManager.run('undo');
             }}
           >
-            <Icons.Undo className="" />
+            <Icons.Undo />
           </Button>
           <Button
             variant="ghost"
@@ -114,7 +106,7 @@ function ViewerHeader({ appConfig }: withAppTypes<{ appConfig: AppTypes.Config }
               commandsManager.run('redo');
             }}
           >
-            <Icons.Redo className="" />
+            <Icons.Redo />
           </Button>
         </div>
       }

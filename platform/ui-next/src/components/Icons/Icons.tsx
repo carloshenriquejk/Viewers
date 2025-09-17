@@ -638,6 +638,7 @@ export const Icons = {
   //
   //
   // Aliases
+  'icon-tool-cobb-angle': (props: IconProps) => ToolCobbAngle(props),
   'prev-arrow': (props: IconProps) => Icons.ArrowLeftBold(props),
   'next-arrow': (props: IconProps) => Icons.ArrowRightBold(props),
   'loading-ohif-mark': (props: IconProps) => LoadingOHIFMark(props),
@@ -694,7 +695,7 @@ export const Icons = {
   'tool-capture': (props: IconProps) => ToolCapture(props),
   'tool-cine': (props: IconProps) => ToolCine(props),
   'tool-circle': (props: IconProps) => ToolCircle(props),
-  'tool-cobb-angle': (props: IconProps) => ToolCobbAngle(props),
+  // 'tool-cobb-angle': (props: IconProps) => ToolCobbAngle(props),
   'tool-create-threshold': (props: IconProps) => ToolCreateThreshold(props),
   'tool-crosshair': (props: IconProps) => ToolCrosshair(props),
   'dicom-tag-browser': (props: IconProps) => ToolDicomTagBrowser(props),
@@ -734,7 +735,7 @@ export const Icons = {
   'tool-segment-label': (props: IconProps) => ToolSegmentLabel(props),
   'icon-tool-window-region': (props: IconProps) => ToolWindowRegion(props),
   'icon-tool-ultrasound-bidirectional': (props: IconProps) => ToolUltrasoundBidirectional(props),
-  'icon-tool-cobb-angle': (props: IconProps) => ToolCobbAngle(props),
+
   'icon-tool-loupe': (props: IconProps) => ToolMagnify(props),
   'tool-probe': (props: IconProps) => ToolProbe(props),
   'icon-tool-probe': (props: IconProps) => ToolProbe(props),
